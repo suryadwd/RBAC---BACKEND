@@ -5,8 +5,6 @@ const { signup, login, logout, home, createAdmin,deleteAdmin, noOfUsers, noOfAdm
 
 const { protectedRoute, isSuperAdmin, isAdmin, isAdminOrSuperAdmin} = require("../middleware/auth.middleware");
 
-router.get("/", (req, res) => res.send("Hello World! go through the readme.md file to check more"));
-
 router.post("/signup", signup);
 
 router.post("/login", login);

@@ -28,6 +28,9 @@ app.use(session({
 
 //routes 
 app.use("/api/auth",authRoute)
+app.use("/", (req, res) => {
+  res.send("you are on homepage check the readme.md file for more")
+})
 
 const PORT = process.env.PORT || 5000 
 

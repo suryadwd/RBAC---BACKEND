@@ -1,6 +1,10 @@
 const bcrypt = require("bcryptjs");
 const User = require("../model/user.model");
 
+const main= (req, res) => {
+  res.send("Hello World! go through the readme.md file to check more")
+}
+
 // signup 
 const signup = async (req, res) => {
 
